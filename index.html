@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>📅 Timetable Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>📅 Timetable Tracker</h1>
+    <div id="timeDateBar"></div>
+
+    <div class="controls">
+      <label for="dayTypeSelect"><strong>Choose Day Type:</strong></label>
+      <select id="dayTypeSelect">
+        <option value="">-- Select --</option>
+        <option value="holiday">🏖️ Holiday</option>
+        <option value="school">🏫 School</option>
+      </select>
+      <button id="refreshBtn">⟳ Refresh</button>
+      <button id="clearDailyBtn">🧹 Clear Today's Data</button>
+    </div>
+
+    <div id="summaryStats">
+      <p><strong>✅ Tasks Completed:</strong> <span id="totalCompleted">0</span></p>
+      <p><strong>📋 Tasks Remaining:</strong> <span id="totalRemaining">0</span></p>
+      <p><strong>📊 Completion%:</strong> <span id="completionPercent">0%</span></p>
+      <p><strong>⏰ Time Started Early:</strong> <span id="timeStartedEarly">0 minutes</span></p>
+      <p><strong>⏰ Time Started Late:</strong> <span id="timeStartedLate">0 minutes</span></p>
+      <p><strong>⏹️ Time Ended Early:</strong> <span id="timeEndedEarly">0 minutes</span></p>
+      <p><strong>⏹️ Time Ended Late:</strong> <span id="timeEndedLate">0 minutes</span></p>
+    </div>
+
+    <hr />
+    <div id="timetableContainer"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
